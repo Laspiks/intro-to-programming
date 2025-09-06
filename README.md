@@ -1,2 +1,2 @@
 # intro-to-programming
-Rep for studying
+Kirill Fedorov - course G7
