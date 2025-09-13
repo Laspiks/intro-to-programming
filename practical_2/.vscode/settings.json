@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\fedor\\ukma\\intro-to-programming\\practical_2",
+            "binaryPath": "c:\\Users\\fedor\\ukma\\intro-to-programming\\practical_2\\practical_2",
+            "binaryArgs": []
+        }
+    ]
+}
