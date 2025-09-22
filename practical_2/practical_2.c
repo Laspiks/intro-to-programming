@@ -3,7 +3,6 @@
 
 // Function to calculate the N-th term of a geometric progression
 float geometric_term(int n, float a, float r) {
-    // ToDo: implement this function
     // Tip: find formula and use function pow() from math.h
     
     return a * pow(r, n - 1);
@@ -11,7 +10,6 @@ float geometric_term(int n, float a, float r) {
 
 // Function to calculate the sum of first N terms of a geometric progression
 float geometric_sum(int n, float a, float r) {
-    // ToDo: implement this function
     // Tip: find formula and use function pow() from math.h
 
     return (a * (pow(r, n) - 1)) / (r - 1);

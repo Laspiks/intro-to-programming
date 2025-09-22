@@ -1,0 +1,21 @@
+mkdir CLI_exersise
+cd CLI_exersise
+nano empty_file  (ctrl+s, ctrl+x)
+ls -l
+man printf > empty_file
+ls -l
+mv empty_file printf_file
+cat printf_file
+diff print_3_file printf_file
+rm printf_file
+grep "printf" printf_3_file
+grep -c "printf" print_3_file
+ln -s print_3_file print_3_soft
+ls -l
+sed -i 's/printf/scanf/g' print_3_file
+grep -c "printf" print_3_soft
+mkdir subfolder
+cd ..
+rm -r CLI_exersise
+htop (for windows I didn't find good case) tasklist (no CPU)
+history
