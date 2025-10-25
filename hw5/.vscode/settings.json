@@ -1,0 +1,13 @@
+{
+    "makefile.makefilePath": "Makefile",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/laspiks/ukma/intro-to-programming/hw5/demo",
+            "binaryPath": "/home/laspiks/ukma/intro-to-programming/hw5/demo/demo",
+            "binaryArgs": []
+        }
+    ],
+    "files.associations": {
+        "array_utils.h": "c"
+    }
+}
