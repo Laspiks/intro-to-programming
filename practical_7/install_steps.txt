@@ -1,0 +1,5 @@
+To install gtest I used APT package manager
+> sudo apt install libgtest-dev
+
+Then to check installation I used pkg-config
+> pkg-config --modversion gtest
