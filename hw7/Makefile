@@ -1,0 +1,31 @@
+CC = gcc
+CXX = g++
+
+CFLAGS = -Wall -Wextra -Iinclude -g
+CXXFLAGS = -Wall -Wextra -Iinclude -g
+
+SRC_C = src/c_vector.c src/custom_getline.c
+SRC_CPP = tests/c_vector_test.cpp tests/custom_getline_test.cpp
+
+OBJ_C = $(SRC_C:.c=.o)
+OBJ_CPP = $(SRC_CPP:.cpp=.o)
+
+all: main tests
+
+main: $(OBJ_C) main.o
+	$(CC) $(CFLAGS) -o main main.o $(OBJ_C)
+
+tests: $(OBJ_C) $(OBJ_CPP)
+	$(CXX) $(CXXFLAGS) -o gtests $(OBJ_CPP) $(OBJ_C) -lgtest_main -lgtest -lpthread
+	
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+clean:
+	rm -f main gtests **/*.o *.o
+
+.PHONY: all clean tests
