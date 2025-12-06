@@ -12,7 +12,6 @@ if (!lineptr || !n) return -1;
     size_t len = 0;
     int c;
 
-    // выделяем буфер, если его нет
     if (!buf) {
         cap = 128;
         buf = (char*)malloc(cap);

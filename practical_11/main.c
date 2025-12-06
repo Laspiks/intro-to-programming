@@ -5,14 +5,13 @@
 int main() {
     printf("=== Vector Test ===\n");
 
-    /* --- ТЕСТ 1: Вектор целых чисел (int) --- */
     printf("\n[Integer Test]\n");
     Vector* v_int = vector_create(4, sizeof(int));
     
     // Push
     for (int i = 0; i < 10; ++i) {
         int val = i * 10;
-        vector_push_back(v_int, &val); // Передаем адрес!
+        vector_push_back(v_int, &val);
         printf("Pushed: %d | Size: %zu, Cap: %zu\n", val, vector_get_size(v_int), vector_get_capacity(v_int));
     }
 

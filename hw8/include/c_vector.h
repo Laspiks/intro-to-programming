@@ -7,7 +7,6 @@ extern "C" {
 
 #include <stddef.h>
 
-// Forward declaration
 struct Vector;
 
 typedef struct Vector {
