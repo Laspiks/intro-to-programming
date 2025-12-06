@@ -8,7 +8,6 @@ int main() {
     printf("\n[Integer Test]\n");
     Vector* v_int = vector_create(4, sizeof(int));
     
-    // Push
     for (int i = 0; i < 10; ++i) {
         int val = i * 10;
         vector_push_back(v_int, &val);
